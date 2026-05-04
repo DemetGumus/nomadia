@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomadia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="Nomadia">NOMADİA</h1>
+            <ul class="menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#camp">Camp</a></li>
+                <li><a href="#food">Food</a></li>
+            </ul>
+            <div class="hamburger">☰</div>
+            <button id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Explore the World</h1>
+            <p>Stay Wild,Travel Free</p>
+            <a href="#explore" class="btn">Start Exploring</a>
+        </div>
+
+    </section>
+
+    <section id="explore" class="explore">
+        <h2>Explore</h2>
+        <div class="cards">
+
+            <div class="card">
+                <a href="turkey.html" class="card">
+
+                    <img src="tur-kaleici.jpg">
+                    <h3>Türkiye</h3>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a href="italy.html" class="card">
+                    <img src="ita-1.jpg">
+                    <h3>İtaly</h3>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a href="Japan.html" class="card">
+                    <img src="jap-2.jpg">
+                    <h3>Japan</h3>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="camp" class="camp">
+        <h2>Camping Life</h2>
+        <p>Experience nature and freedom under the stars.</p>
+    </section>
+
+    <!-- FOOD -->
+    <section id="food" class="food">
+        <h2>Food Experiences</h2>
+
+        <div class="food-grid">
+            <div class="food-card">
+                <img src="kebap.jpg">
+                <h3>turkhıs Kebab</h3>
+            </div>
+
+            <div class="food-card">
+                <img src="pizza1.jpg">
+                <h3>Italy - Pizza</h3>
+            </div>
+
+            <div class="food-card">
+                <img src="sushı.jpg">
+                <h3>japan - Sushı</h3>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="about-box">
+            <h2>About Me</h2>
+            <p>
+                Hi, I’m Demet. I love traveling, discovering new cultures and sharing my experiences.
+                Nomadia is where I collect my journeys and inspire others to explore the world.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Nomadia | All Rights Reserved</p>
+    </footer>
+    <script>
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+
+hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+</script>
+
+
+<script>
+const btn = document.getElementById("themeToggle");
+const body = document.body;
+
+btn.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    if (body.classList.contains("dark")) {
+        btn.textContent = "☀️";
+    } else {
+        btn.textContent = "🌙";
+    }
+});
+</script>
+
+
+
+
+</body>
+
+</html>
